@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sample News - fixture</title>
+</head>
+<body>
+  <!-- Mirrors the markup of the default ScienceDaily source, trimmed down and
+       seeded with the awkward cases the parser has to survive. -->
+  <div id="heroes">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="latest-head"><a href="/releases/2026/08/260802223417.htm">A Simple Supplement Could Help the Immune System Fight Cancer</a></div>
+        <div class="latest-summary">
+          <span class="story-date">Aug. 3, 2026 </span> Low arginine levels may let cancer cells slip past the immune system.
+        </div>
+      </div>
+
+      <!-- Absolute link plus a full-month date spelling -->
+      <div class="col-md-6">
+        <div class="latest-head"><a href="https://example.org/news/vaccine-trial">New Vaccine Trial Reports Strong Results</a></div>
+        <div class="latest-summary">
+          <span class="story-date">July 31, 2026 </span> A phase III clinical trial met its primary endpoint.
+        </div>
+      </div>
+
+      <!-- No date element at all: published/published_raw must stay empty -->
+      <div class="col-md-6">
+        <div class="latest-head"><a href="/releases/2026/08/undated.htm">Quantum Computing Milestone Reached</a></div>
+        <div class="latest-summary">
+          Researchers report a new record in qubit coherence time.
+        </div>
+      </div>
+
+      <!-- Unparseable date: keep the raw text, leave the normalised field empty -->
+      <div class="col-md-6">
+        <div class="latest-head"><a href="/releases/2026/08/relative-date.htm">Cardiology Guidelines Updated for Hypertension</a></div>
+        <div class="latest-summary">
+          <span class="story-date">3 hours ago</span> The new guidance lowers the treatment threshold.
+        </div>
+      </div>
+
+      <!-- Headline with no link: must be skipped -->
+      <div class="col-md-6">
+        <div class="latest-head">Sponsored Placeholder Without A Link</div>
+        <div class="latest-summary">
+          <span class="story-date">Aug. 1, 2026 </span> This block should never reach the CSV.
+        </div>
+      </div>
+
+      <!-- Link with no text: must be skipped -->
+      <div class="col-md-6">
+        <div class="latest-head"><a href="/releases/2026/08/empty-title.htm"></a></div>
+        <div class="latest-summary">Empty headline text.</div>
+      </div>
+
+      <!-- Same story as the first item, different tracking URL: duplicate -->
+      <div class="col-md-6">
+        <div class="latest-head"><a href="/releases/2026/08/260802223417.htm?utm_source=newsletter">A Simple Supplement Could Help the Immune System Fight Cancer</a></div>
+        <div class="latest-summary">
+          <span class="story-date">Aug. 3, 2026 </span> Low arginine levels may let cancer cells slip past the immune system.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- A second layout on the same page, using a <time datetime="..."> attribute -->
+  <div id="featured_blurbs">
+    <div class="tab-pane">
+      <div class="latest-head"><a href="/releases/2026/07/gene-therapy.htm">Gene Therapy Restores Hearing in Early Trial</a></div>
+      <div class="latest-summary">
+        <time class="story-date" datetime="2026-07-29">July 29, 2026</time> Five of six children showed improvement.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

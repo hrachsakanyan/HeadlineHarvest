@@ -1,0 +1,60 @@
+# Medical / health keywords for --keywords
+# One term per line. Multi-word phrases are matched as phrases.
+# Everything after a '#' is ignored, and matching is case-insensitive.
+
+# --- Specialties ---
+cardiology
+cardiac
+oncology
+neurology
+neurological
+psychiatry
+pediatrics
+immunology
+epidemiology
+radiology
+surgery
+surgical
+
+# --- Conditions ---
+cancer
+tumor
+tumour
+diabetes
+alzheimer
+dementia
+parkinson
+stroke
+heart disease
+heart attack
+hypertension
+obesity
+asthma
+sepsis
+infection
+virus
+viral
+influenza
+covid
+long covid
+mental health
+depression
+anxiety
+
+# --- Treatment and research ---
+vaccine
+vaccination
+antibiotic
+antiviral
+therapy
+treatment
+drug
+clinical trial
+patient
+patients
+diagnosis
+diagnostic
+screening
+gene therapy
+stem cell
+public health

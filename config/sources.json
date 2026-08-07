@@ -1,0 +1,41 @@
+{
+  "_comment": "Selectors are CSS. 'item_selector' picks each headline block; the other selectors run inside that block. Verify a site's robots.txt and terms before adding it here.",
+  "sources": [
+    {
+      "name": "ScienceDaily - Health & Medicine",
+      "url": "https://www.sciencedaily.com/news/health_medicine/",
+      "item_selector": "#heroes .col-md-6, #featured_blurbs .tab-pane",
+      "title_selector": ".latest-head a",
+      "link_selector": ".latest-head a",
+      "link_attr": "href",
+      "date_selector": ".story-date",
+      "summary_selector": ".latest-summary",
+      "delay": 2.0,
+      "enabled": true
+    },
+    {
+      "name": "ScienceDaily - Mind & Brain",
+      "url": "https://www.sciencedaily.com/news/mind_brain/",
+      "item_selector": "#heroes .col-md-6, #featured_blurbs .tab-pane",
+      "title_selector": ".latest-head a",
+      "link_selector": ".latest-head a",
+      "link_attr": "href",
+      "date_selector": ".story-date",
+      "summary_selector": ".latest-summary",
+      "delay": 2.0,
+      "enabled": true
+    },
+    {
+      "name": "Hacker News - front page",
+      "url": "https://news.ycombinator.com/",
+      "item_selector": "tr.athing",
+      "title_selector": ".titleline > a",
+      "link_selector": ".titleline > a",
+      "link_attr": "href",
+      "summary_selector": "",
+      "date_selector": "",
+      "delay": 30.0,
+      "enabled": false
+    }
+  ]
+}
