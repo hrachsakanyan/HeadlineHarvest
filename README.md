@@ -13,7 +13,7 @@
 
 ---
 
-## ✨ Why HeadlineHarvest?
+## ✨ Why HeadlineHarvest? 
 
 The interesting part of a scraper isn't `requests.get()`.
 
