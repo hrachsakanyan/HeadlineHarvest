@@ -192,7 +192,7 @@ python -m src.main \
   --output data/output/cardio.csv
 ```
 
-### Scrape one source with debug logging
+### Scrape one source with debug logging 
 
 ```bash
 python -m src.main \
