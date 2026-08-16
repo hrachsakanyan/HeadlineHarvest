@@ -119,7 +119,7 @@ Some sites forbid automated access in their terms even where `robots.txt` is sil
 
 ---
 
-## 📦 Setup
+## 📦 Setup 
 
 ### Requirements
 
