@@ -1,4 +1,4 @@
-# 🌾 HeadlineHarvest 
+# 🌾 HeadlineHarvest
 
 ### A polite, configurable news headline scraper for clean CSV & JSON datasets
 
